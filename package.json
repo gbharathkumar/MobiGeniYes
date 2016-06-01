@@ -1,20 +1,24 @@
 {
-  "name": "ionic-conference-app",
-  "description": "Ionic Conference App",
-  "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/driftyco/ionic-conference-app.git"
+    "url": "https://github.com/gbharathkumar/MobiGeniYes.git"
   },
   "dependencies": {
-    "angular2": "2.0.0-beta.15",
+    "@angular/common": "^2.0.0-rc.1",
+    "@angular/compiler": "^2.0.0-rc.1",
+    "@angular/core": "^2.0.0-rc.1",
+    "@angular/http": "^2.0.0-rc.1",
+    "@angular/platform-browser": "^2.0.0-rc.1",
+    "@angular/platform-browser-dynamic": "^2.0.0-rc.1",
+    "@angular/router": "^2.0.0-rc.1",
     "es6-shim": "^0.35.0",
-    "gulp": "^3.9.1",
     "gulp-util": "^3.0.7",
-    "ionic-angular": "2.0.0-beta.6",
-    "ionic-native": "^1.2.0",
+    "ionic-angular": "2.0.0-beta.7",
+    "ionic-native": "^1.1.0",
     "ionicons": "3.0.0",
-    "rxjs": "5.0.0-beta.2"
+    "reflect-metadata": "^0.1.3",
+    "rxjs": "5.0.0-beta.6",
+    "zone.js": "^0.6.12"
   },
   "devDependencies": {
     "del": "2.2.0",
@@ -24,15 +28,18 @@
     "ionic-gulp-fonts-copy": "^1.0.0",
     "ionic-gulp-html-copy": "^1.0.0",
     "ionic-gulp-sass-build": "^1.0.0",
-    "ionic-gulp-scripts-copy": "^1.0.1",
+    "ionic-gulp-scripts-copy": "^2.0.0",
     "run-sequence": "1.1.5"
   },
+  "name": "geniyes",
+  "description": "GeniYes: An Ionic project",
   "cordovaPlugins": [
+    "cordova-plugin-device",
+    "cordova-plugin-console",
     "cordova-plugin-whitelist",
-    {
-      "locator": "https://github.com/VersoSolutions/CordovaClipboard",
-      "id": "com.verso.cordova.clipboard"
-    }
+    "cordova-plugin-splashscreen",
+    "cordova-plugin-statusbar",
+    "ionic-plugin-keyboard"
   ],
   "cordovaPlatforms": [
     "ios",
