@@ -1,0 +1,27 @@
+<ion-navbar *navbar>
+  <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title>Home</ion-title>
+</ion-navbar>
+
+<ion-content class="HomeTilesView">
+	<ion-list>
+	<ion-row >
+		<ion-col *ngFor='#Tile of HomeTiles'> 
+			<ion-card [style.background]="Tile.Background" *ngIf="!(Tile.SlideDetails != null && Tile.SlideDetails.length > 0)" ink>
+				<ion-icon [name]="Tile.IconPath" primary larger></ion-icon>
+				<div class="ion-card-title">{{Tile.Name}}</div>
+				<div class="ion-card-subtitle">{{Tile.Code}}</div>
+			</ion-card>
+			<ion-slides [style.background]="Tile.Background" *ngIf="(Tile.SlideDetails != null && Tile.SlideDetails.length > 0)"  [options]="mySlideOptions" ink>
+				<ion-slide *ngFor='#slide of Tile.SlideDetails' >
+					
+					<ion-icon [name]="slide.IconPath" primary larger></ion-icon>
+					 <p [innerHTML]="slide.Details"></p>
+				</ion-slide>
+			</ion-slides>
+		</ion-col>
+	</ion-row>
+	</ion-list>
+</ion-content>

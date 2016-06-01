@@ -1,0 +1,133 @@
+{
+    "message": "HomeTiles List",
+    "homeTiles": [
+{
+            "_id": "571bcf399f56e0b012027bd2",
+            "UserId": "571bcace84fc471010dc319b",
+            "IconPath": "cart",
+			"Background" : "#3CB5D0",
+            "Code": "Groceries",
+            "Name": "Grocery Shop",
+			"SlideDetails" : [
+				{
+					"Details" : "This is slide 1 of the Grocery shops",
+					"IconPath" : "cart",
+					"Background" : "#CCB5D0",
+					"Code" : "CODE1"
+				},
+				{
+					"Details" : "Hi I am slide 2",
+					"IconPath" : "cart",
+					"Background" : "#CCB5D0",
+					"Code" : "CODE1"				
+				},
+				{
+					"Details" : "Final slide",
+					"IconPath" : "cart",
+					"Background" : "#CCB5D0",
+					"Code" : "CODE1"				
+				}
+			],
+            "__v": 0
+        },
+        {
+            "_id": "571bcf5e9f56e0b012027bd3",
+            "UserId": "571bcace84fc471010dc319b",
+            "IconPath": "contacts",
+			"Background" : "#DE4869",
+            "Code": "REST",
+            "Name": "Restaurants",
+            "__v": 0
+        },
+        {
+            "_id": "571bd1599f56e0b012027bd4",
+            "UserId": "571bcace84fc471010dc319b",
+            "IconPath": "film",
+			"Background" : "#008BBA",
+            "Code": "film",
+            "Name": "Movie theatres",
+            "__v": 0
+        },
+		{
+            "_id": "571bd1599f56e0b012027bd5",
+            "UserId": "571bcace84fc471010dc319b",
+            "IconPath": "female",
+			"Background" : "#593E2D",
+            "Code": "Doctors",
+            "Name": "Gynecologists",
+            "__v": 0
+        },
+{
+            "_id": "571bcf399f56e0b012027bd2",
+            "UserId": "571bcace84fc471010dc319b",
+            "IconPath": "../../img/images.jpg",
+			"Background" : "#324154",
+            "Code": "GROC",
+            "Name": "Grocery Shop",
+            "__v": 0
+        },
+        {
+            "_id": "571bcf5e9f56e0b012027bd3",
+            "UserId": "571bcace84fc471010dc319b",
+            "IconPath": "cut",
+			"Background" : "#240124",
+            "Code": "Tailoring",
+            "Name": "Tailor shops",
+            "__v": 0
+        },
+        {
+            "_id": "571bd1599f56e0b012027bd4",
+            "UserId": "571bcace84fc471010dc319b",
+            "IconPath": "car",
+			"Background" : "#BF1A24",
+            "Code": "Car Mechanics",
+            "Name": "Mechanic Shops",
+            "__v": 0
+        },
+		{
+            "_id": "571bd1599f56e0b012027bd5",
+            "UserId": "571bcace84fc471010dc319b",
+            "IconPath": "Cafe",
+			"Background" : "#C31618",
+            "Code": "Cafe",
+            "Name": "Coffee Shops",
+            "__v": 0
+        },		
+        {
+            "_id": "571bcf399f56e0b012027bd2",
+            "UserId": "571bcace84fc471010dc319b",
+            "IconPath": "Boat",
+			"Background" : "#BF1A24",
+            "Code": "Beach Resorts",
+            "Name": "Beach Resorts",
+            "__v": 0
+        },
+        {
+            "_id": "571bcf5e9f56e0b012027bd3",
+            "UserId": "571bcace84fc471010dc319b",
+            "IconPath": "beer",
+			"Background" : "#324154",
+            "Code": "Bars",
+            "Name": "Bars",
+            "__v": 0
+        },
+        {
+            "_id": "571bd1599f56e0b012027bd4",
+            "UserId": "571bcace84fc471010dc319b",
+            "IconPath": "basketball",
+			"Background" : "#3CB5D0",
+            "Code": "Sports",
+            "Name": "Sports",
+            "__v": 0
+        },
+		{
+            "_id": "571bd1599f56e0b012027bd5",
+            "UserId": "571bcace84fc471010dc319b",
+            "IconPath": "basket",
+			"Background" : "#324154",
+            "Code": "Shopping",
+            "Name": "Departmental store",
+            "__v": 0
+        }
+    ]
+}

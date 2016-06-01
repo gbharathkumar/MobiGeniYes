@@ -1,0 +1,91 @@
+.HomeTilesView{
+
+ion-card{
+	position : relative;
+	text-align : center;
+	padding : 1px 0px 1px 0px;
+
+	height : 150px;
+	margin : 1px 0px 1px 0px;
+	width : 100%
+}
+
+ion-icon {
+	position : relative;
+	text-align : center;
+	top: 16%;
+	font-size: 2em;
+	width : 100%;
+}
+
+ion-slides{
+	position : relative;
+	text-align : center;
+	padding : 1px 0px 1px 0px;
+
+	height : 150px;
+	margin : 1px 0px 1px 0px;
+	width : 100%;
+
+	
+	ion-icon {
+
+		top: 16%;
+		font-size: 2em;
+		width : 100%;
+	}
+
+	p {
+		padding: 0 1px;
+		font-size: 10px;
+		line-height: 1.5;
+		color: #60646B;
+		width : 100%;
+	}
+}
+
+.ion-card-title {
+	position: absolute;
+    top: 36%;
+    font-size: 1.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+}
+
+.ion-card-image {
+	height : 150px;
+}
+
+.ion-card-subtitle {
+    font-size: 0.75em;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    color: #fff;
+}
+ 
+ion-row {
+  height: 100%;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+ion-col {
+  flex: 0 0 50%;
+  max-width: 50%;
+  text-align: center;
+  padding : 1px;
+}
+
+
+.cell-1 {
+  background-color: #C5DCFC;
+}
+
+img[class^="ion-"] {
+  font-size: 8px;
+}
+
+
+}
