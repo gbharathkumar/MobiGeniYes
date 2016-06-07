@@ -3,44 +3,36 @@
 ion-card{
 	position : relative;
 	text-align : center;
-	padding : 1px 0px 1px 0px;
-
 	height : 150px;
-	margin : 1px 0px 1px 0px;
-	width : 100%
+	width : 100%;
+	margin : 0 0 0 0;
 }
 
 ion-icon {
 	position : relative;
 	text-align : center;
-	top: 16%;
-	font-size: 2em;
+	top: 25%;
+	font-size: 4em;
 	width : 100%;
 }
 
 ion-slides{
 	position : relative;
+	padding : 10 10 10 10; 
 	text-align : center;
-	padding : 1px 0px 1px 0px;
-
 	height : 150px;
-	margin : 1px 0px 1px 0px;
 	width : 100%;
-
 	
 	ion-icon {
-
 		top: 16%;
 		font-size: 2em;
 		width : 100%;
 	}
 
 	p {
-		padding: 0 1px;
-		font-size: 10px;
-		line-height: 1.5;
-		color: #60646B;
+		font-size: 0.60em;
 		width : 100%;
+		color: #fff;		
 	}
 }
 
@@ -60,22 +52,34 @@ ion-slides{
 .ion-card-subtitle {
     font-size: 0.75em;
     position: absolute;
-    top: 52%;
+	text-align : left;
+    top: 82%;
+	left : 10%;
     width: 100%;
     color: #fff;
 }
  
 ion-row {
   height: 100%;
-  padding: 0;
   flex-wrap: wrap;
 }
 
 ion-col {
-  flex: 0 0 50%;
+  flex: 0 0 100%;
   max-width: 50%;
   text-align: center;
-  padding : 1px;
+}
+
+.ion-col-fullwidth {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+.ion-col-onethird {
+  flex: 0 0 100%;
+  max-width: 33%;
+  text-align: center;
 }
 
 

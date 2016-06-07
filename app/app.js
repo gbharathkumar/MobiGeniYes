@@ -3,24 +3,28 @@ import {StatusBar} from 'ionic-native';
 import {LoginPage} from './pages/login/login';
 import {SignupPage} from './pages/signup/signup';
 import {HomeTilesPage} from './pages/HomeTiles/HomeTiles';
-import {UsersService} from './services/usersProvider';
+import {GroceryListPage} from './pages/Groceries/Grocery-list';
+import {GroceryDetailsPage} from './pages/Groceries/Grocery-details';
 
+import {UsersService} from './services/usersProvider';
+import {GroceriesService} from './services/GroceriesProvider';
 @App({
   templateUrl: 'build/app.html',
-  providers: [UsersService],
+  providers: [UsersService, GroceriesService],
   config: {}
 })
 class ConferenceApp {
   static get parameters() {
     return [
-      [IonicApp], [Events], [Platform], [UsersService]
+      [IonicApp], [Events], [Platform], [UsersService], [GroceriesService] 
     ]
   }
 
-  constructor(app, events, platform, userData) {
+  constructor(app, events, platform, userData, GroceriesData) {
     this.app = app;
     this.events = events;
     this.userData = userData;
+	this.groceriesData = GroceriesData;
     this.loggedIn = false;
 	
     // Call any initial plugins when ready

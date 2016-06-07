@@ -23,7 +23,7 @@ export class LoginPage {
     this.submitted = true;
 
     if (form.valid) {
-      this.userData.signIn(login).subscribe(
+      this.userData.signIn(this.login).subscribe(
             data => {
 				this.nav.push(HomeTilesPage);
 			}

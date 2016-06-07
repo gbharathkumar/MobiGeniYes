@@ -1,0 +1,16 @@
+#0FD250 green         white
+#FE3674 pink			white
+#FEE600 yellow			black
+#1442EF blue			white
+
+#FF0097 purple
+#A200FF	magenta
+#00ABA9 TEAL
+#8CBF26 LIME
+#A05000 BROWN
+#E671B8 PINK
+#F09609 Orange
+#1BA1E2 BLUE
+#E51400 RED
+#339933 GREEN 
+

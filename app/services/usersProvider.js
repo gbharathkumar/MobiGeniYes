@@ -59,7 +59,7 @@ export class UsersService {
 	
     handleError(error) {
         console.error(error);
-        return Observable.throw(error.json().error || 'Server error');
+        return Observable.throw(error.json().error || 'Server error'); 
     }
 	
 	hasLoggedIn() {

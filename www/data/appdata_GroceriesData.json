@@ -1,0 +1,72 @@
+{
+    "message": "Groceries List",
+    "Groceries": [
+		{
+            "_id": "571bcf399f56e0b012027bd2",
+            "pic": "img/appimages_noGroceries.jpg",
+            "title": "potato",
+			"description": "potato is good for health.",
+			"price" : "$1",
+			
+			"Background" : "#A200FF",
+            "Code": "VEG_POTATO",
+            "__v": 0
+        },
+        {
+            "_id": "571bcf5e9f56e0b012027bd3",
+            "pic": "img/appimages_noGroceries.jpg",
+            "title": "tomato",
+			"description": "tomato is good for health.",
+			"price" : "$1",
+			
+			"Background" : "#A200FF",
+            "Code": "VEG_POTATO",
+            "__v": 0
+        },
+        {
+            "_id": "571bcf5e9f56e0b012027bd3",
+            "pic": "img/appimages_noGroceries.jpg",
+            "title": "tomato",
+			"description": "tomato is good for health.",
+			"price" : "$1",
+			
+			"Background" : "#A200FF",
+            "Code": "VEG_POTATO",
+            "__v": 0
+        },
+        {
+            "_id": "571bcf5e9f56e0b012027bd3",
+            "pic": "img/appimages_noGroceries.jpg",
+            "title": "tomato",
+			"description": "tomato is good for health.",
+			"price" : "$1",
+			
+			"Background" : "#A200FF",
+            "Code": "VEG_POTATO",
+            "__v": 0
+        },
+        {
+            "_id": "571bcf5e9f56e0b012027bd3",
+            "pic": "img/appimages_noGroceries.jpg",
+            "title": "tomato",
+			"description": "tomato is good for health.",
+			"price" : "$1",
+			
+			"Background" : "#A200FF",
+            "Code": "VEG_POTATO",
+            "__v": 0
+        },
+        {
+            "_id": "571bcf5e9f56e0b012027bd3",
+            "pic": "img/appimages_noGroceries.jpg",
+            "title": "tomato",
+			"description": "tomato is good for health.",
+			"price" : "$1",
+			
+			"Background" : "#A200FF",
+            "Code": "VEG_POTATO",
+            "__v": 0
+        }
+		
+   ]
+}
