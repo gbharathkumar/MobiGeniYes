@@ -2,19 +2,18 @@
     <button menuToggle>
         <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Groceries</ion-title>
+    <ion-title>{{navigationComponent.Name}}</ion-title>
 </ion-navbar>
 
-<ion-content>
-    <ion-list>
-		<ion-card ion-item *ngFor="#grocery of groceries" (click)="itemTapped($event, grocery)">
+<ion-content clsas="grocery">
+		<ion-card *ngFor="#grocery of groceries" (click)="itemTapped($event, grocery)">
             <img src="{{grocery.pic}}"/>
             <ion-card-content>
                 <h2 class="card-title">
                     {{grocery.title}}
                 </h2>
             </ion-card-content>				
-            <ion-row no-padding>
+            <ion-row>
                 <ion-col>
                     <button clear small >
                         <ion-icon name="star"></ion-icon>
@@ -35,5 +34,4 @@
                 </ion-col>
             </ion-row>
         </ion-card>	
-    </ion-list>
 </ion-content>

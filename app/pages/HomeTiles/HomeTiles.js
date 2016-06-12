@@ -4,7 +4,7 @@ import {GroceryListPage} from '../../pages/Groceries/Grocery-list';
 
 @Page({
 	templateUrl : "build/pages/HomeTiles/HomeTiles.html", 
-	providers : [TilesProvider]
+	providers : []
 })
 export class HomeTilesPage{
 	static get parameters(){
@@ -31,7 +31,7 @@ export class HomeTilesPage{
 	
     itemTapped(event, tile) {
         this.nav.push(GroceryListPage, {
-            tile: tile
+            navigationComponent: tile
         });
     }	
 	

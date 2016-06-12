@@ -9,14 +9,32 @@
   <ion-content class="outer-content">
 
     <ion-list>
-      <ion-list-header>
+		<ion-list-header>
         Navigate
-      </ion-list-header>
-      <button ion-item menuClose *ngFor="let p of appPages" (click)="openPage(p)">
-        <ion-icon item-left [name]="p.icon"></ion-icon>
-        {{p.title}}
-      </button>
-    </ion-list>
+		</ion-list-header>
+		<div *ngFor="let p of appPages">
+			<button 
+                        (click)="toggleGroup(p)"
+                        [class.active]="isGroupShown(p)"
+                        item-stable ion-item>
+                    <ion-icon name="{{p.IconPath}}"></ion-icon>
+                    <span>
+                        {{p.Name}}
+                    </span>
+                    <ion-icon *ngIf="p.items.length" name="{{isGroupShown(p) ? 'arrow-dropdown' : 'arrow-dropright'}}" item-right></ion-icon>
+            </button>
+			<button 	
+						*ngFor="let item of p.items"
+						(click)="openPage(item)"
+						[hidden]="!isGroupShown(p)"
+						item-accordion menuClose ion-item>
+					<ion-icon name="{{item.IconPath}}"></ion-icon>
+					<span>
+						{{item.Name}}
+					</span>
+			</button>
+		</div>	
+	</ion-list>
 
     <ion-list *ngIf="loggedIn">
       <ion-list-header>

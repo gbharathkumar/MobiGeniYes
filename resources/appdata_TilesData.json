@@ -8,6 +8,35 @@
 			"Background" : "#A200FF",
             "Code": "GROC",
             "Name": "Grocery Shop",
+			"items" : [
+				{
+					"_id": "571bcf5e9f56e0b012027bd3",
+					"UserId": "571bcace84fc471010dc319b",
+					"IconPath": "cart",
+					"Background" : "#00ABA9",
+					"Code": "FRUITSVEGETABLES",
+					"Name": "Fruits and Vegetables",
+					"__v": 0
+				},
+				{
+					"_id": "571bcf5e9f56e0b012027bd3",
+					"UserId": "571bcace84fc471010dc319b",
+					"IconPath": "cart",
+					"Background" : "#00ABA9",
+					"Code": "GROCANDSTAPLES",
+					"Name": "Groceries and Staples",
+					"__v": 0
+				},				
+				{
+					"_id": "571bcf5e9f56e0b012027bd3",
+					"UserId": "571bcace84fc471010dc319b",
+					"IconPath": "cart",
+					"Background" : "#00ABA9",
+					"Code": "BREADDIARYEGGS",
+					"Name": "Bread Dairy and Eggs",
+					"__v": 0
+				}
+			],
             "__v": 0
         },
         {
@@ -17,6 +46,7 @@
 			"Background" : "#00ABA9",
             "Code": "Tailoring",
             "Name": "Tailor shops",
+			"items" : [],
             "__v": 0
         },
         {
@@ -26,6 +56,7 @@
 			"Background" : "#8CBF26",
             "Code": "Car Mechanics",
             "Name": "Mechanic Shops",
+			"items" : [],
             "__v": 0
         },
 		{
@@ -35,6 +66,7 @@
 			"Background" : "#A05000",
             "Code": "Cafe",
             "Name": "Coffee Shops",
+			"items" : [],
             "__v": 0
         },
 		{
@@ -44,6 +76,7 @@
 			"Background" : "#0FD250",
             "Code": "Groceries",
             "Name": "Grocery Shop",
+			"items" : [],
 			"Width" : "ion-col-fullwidth",
 			"SlideDetails" : [
 				{
@@ -74,6 +107,7 @@
 			"Background" : "#DE4869",
             "Code": "REST",
             "Name": "Restaurants",
+			"items" : [],
 			"Width" : "ion-col-onethird",
             "__v": 0
         },
@@ -84,6 +118,7 @@
 			"Background" : "#FEE600",
             "Code": "film",
             "Name": "Movie theatres",
+			"items" : [],
 			"Width" : "ion-col-onethird",			
             "__v": 0
         },
@@ -94,6 +129,7 @@
 			"Background" : "#1442EF",
             "Code": "Doctors",
             "Name": "Gynecologists",
+			"items" : [],
 			"Width" : "ion-col-onethird",			
             "__v": 0
         },
@@ -105,6 +141,7 @@
 			"Background" : "#E671B8",
             "Code": "Beach Resorts",
             "Name": "Beach Resorts",
+			"items" : [],
             "__v": 0
         },
         {
@@ -114,6 +151,7 @@
 			"Background" : "#F09609",
             "Code": "Bars",
             "Name": "Bars",
+			"items" : [],
             "__v": 0
         },
         {
@@ -123,6 +161,7 @@
 			"Background" : "#1BA1E2",
             "Code": "Sports",
             "Name": "Sports",
+			"items" : [],
             "__v": 0
         },
 		{
@@ -132,6 +171,7 @@
 			"Background" : "#E51400",
             "Code": "Shopping",
             "Name": "Departmental store",
+			"items" : [],
             "__v": 0
         }
     ]

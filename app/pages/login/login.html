@@ -13,7 +13,7 @@
 
   <ion-list>
     <div class="logo">
-      <img src="img/appimages_logo.jpg">
+	  <img src="img/appimages_applicationName.jpg">
     </div>
 
     <form #loginForm="ngForm" novalidate>
@@ -36,15 +36,17 @@
       </p>
 
       <ion-row responsive-sm  >
+
         <ion-col>
-          <button (click)="onLogin(loginForm)" type="submit" secondary block>Login</button>
+          <button (click)="onLogin(loginForm)" type="submit" primary block>Login</button>
         </ion-col>
         <ion-col>
           <button (click)="onSignup()" secondary outline block>Signup</button>
         </ion-col>
+		<ion-col>
+			<button (click)="startApp()"  type="submit" secondary block>Skip</button>
+		</ion-col>		
       </ion-row>
-
-
     </form>
   </ion-list>
 
