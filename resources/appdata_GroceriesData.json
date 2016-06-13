@@ -3,70 +3,239 @@
     "Groceries": [
 		{
             "_id": "571bcf399f56e0b012027bd2",
-            "pic": "img/appimages_noGroceries.jpg",
+            "pic": "img/appimages_vegetables_potato.jpg",
             "title": "potato",
-			"description": "potato is good for health.",
-			"price" : "$1",
-			
+			"description": "Fresho Potatoes are nutrient-dense, non-fattening and have reasonable amount of calories. Include them in your regular meals so that the body receives a good supply of carbohydrates, dietary fibers and essential minerals such as copper, magnesium, and iron. In India, potatoes are probably the second-most consumed vegetables after onions.",
+			"benefits" : "Potatoes should be included in the diet of those having mouth ulcers. As they are easy to digest, they are good for patients. Consumption of potatoes helps to maintain the blood glucose level and keeps the brain alert and active. People who are diagnosed with kidney stones or heart disorders can include potatoes in their diet as they are light on the stomach.",
+			"prices" : [
+				{
+					"size" : "1 kg ( approx. 9 to 10 nos )",
+					"price" : 30
+				},
+				{
+					"size" : "1/2 kg ( approx. 4 to 5 nos )",
+					"price" : 14
+				}
+			],
 			"Background" : "#A200FF",
             "Code": "VEG_POTATO",
+			"categories" : [
+				"FRUITSVEGETABLES"
+			],
+			"type" : "vegetables",
+			"related" : [
+				"VEG_ONION", "VET_TOMATO"
+			],
+			"quantity" : 1,
             "__v": 0
         },
         {
-            "_id": "571bcf5e9f56e0b012027bd3",
-            "pic": "img/appimages_noGroceries.jpg",
-            "title": "tomato",
-			"description": "tomato is good for health.",
-			"price" : "$1",
-			
+            "_id": "571bcf399f56e0b012027bd2",
+            "pic": "img/appimages_vegetables_onion.jpg",
+            "title": "onion",
+			"description": "Onion is a vegetable which is almost like a staple in Indian food. This is also known to be one of the essential ingredients of raw salads. They come in different colours like white, red or yellow and are quite in demand in cold salads and hot soups. You can dice, slice or cut it in rings and put it in burgers and sandwiches. Onions emit a sharp flavour and fragrance once they are fried; it is due to the sulphur compound in the vegetable.",
+			"benefits" : "Onions are known to have antiseptic, antimicrobial and antibiotic properties which help you to get rid of infections. If a piece of onion is inhaled, it can slow down or stop nose bleeding. Those who have sleeping disorders or insomnia can have a good night’s sleep if they have an onion every day. Onions also help to improve the functions of the digestive system; because it releases the digestive juices and cures any problem related to digestion.",
+			"prices" : [
+				{
+					"size" : "1 kg ( approx. 10 to 18 nos )",
+					"price" : 18
+				},
+				{
+					"size" : "1/2 kg ( approx. 5 to 9 nos )",
+					"price" : 10
+				}
+			],
 			"Background" : "#A200FF",
-            "Code": "VEG_POTATO",
+            "Code": "VEG_ONION",
+			"categories" : [
+				"FRUITSVEGETABLES"
+			],
+			"type" : "vegetables",
+			"related" : [
+				"VEG_TOMATO", "VEG_POTATO"
+			],
+			"quantity" : 1,			
             "__v": 0
         },
         {
-            "_id": "571bcf5e9f56e0b012027bd3",
-            "pic": "img/appimages_noGroceries.jpg",
-            "title": "tomato",
-			"description": "tomato is good for health.",
-			"price" : "$1",
-			
+            "_id": "571bcf399f56e0b012027bd2",
+            "pic": "img/appimages_vegetables_tomato.jpg",
+            "title": "Tomato",
+			"description": "These are rich in vitamins, moisture and phytonutrients and minerals. They are an outstanding supply of vitamins C, K and B6, beta-carotene, biotin, potassium, niacin, calcium, iron, phosphorous, selenium and zinc, as well as of many organic acids such as citric and malic acids. ",
+			"benefits" : "It helps to prevent or treat different types of anemia. It may play a role in the prevention of some types of cancer, including lung, prostate and colon cancer. It can be helpful in preventing the damage caused by free radicals to body tissues leading to premature aging and many chronic degenerative diseases. It helps in digestive function.",
+			"prices" : [
+				{
+					"size" : "500 gm ( approx. 7 to 8 nos )",
+					"price" : 40
+				},
+				{
+					"size" : "1 kg ( approx. 12 to 13 nos )",
+					"price" : 70
+				}
+			],
 			"Background" : "#A200FF",
-            "Code": "VEG_POTATO",
+            "Code": "VEG_TOMATO",
+			"categories" : [
+				"FRUITSVEGETABLES"
+			],
+			"type" : "vegetables",
+			"related" : [
+				"VEG_ONION", "VEG_POTATO"
+			],
+			"quantity" : 1,			
             "__v": 0
         },
         {
-            "_id": "571bcf5e9f56e0b012027bd3",
-            "pic": "img/appimages_noGroceries.jpg",
-            "title": "tomato",
-			"description": "tomato is good for health.",
-			"price" : "$1",
-			
+            "_id": "571bcf399f56e0b012027bd2",
+            "pic": "img/appimages_vegetables_carrot.jpg",
+            "title": "Carrot",
+			"description": "The carrot is a root vegetable lengthy, narrow and cylindrical/cone shaped generally bright orange in color & available during the year. Naturally sweet, and crispy, carrots are healthy additions you can make to the vegetable list in your diet as they include several health benefiting nutrients such as anti-oxidants, vitamin A, minerals & beta-carotenes in ample amounts.",
+			"benefits" : "Raw carrots are used as a home remedy for treating worms in children. It helps in preventing gastric ulcers and digestive disorders. These are rich in Beta carotene which is a powerful antioxidant which helps in maintaining a healthy skin and also keep one away from many diseases.",
+			"prices" : [
+				{
+					"size" : "250 gm",
+					"price" : 40
+				},
+				{
+					"size" : "500 gm",
+					"price" : 60
+				},				
+				{
+					"size" : "1 kg ( approx. 12 to 13 nos )",
+					"price" : 70
+				}
+			],
 			"Background" : "#A200FF",
-            "Code": "VEG_POTATO",
+            "Code": "VEG_CARROT",
+			"categories" : [
+				"FRUITSVEGETABLES"
+			],
+			"type" : "vegetables",
+			"related" : [
+				"VEG_ONION" 
+			],
+			"quantity" : 1,			
             "__v": 0
         },
         {
-            "_id": "571bcf5e9f56e0b012027bd3",
-            "pic": "img/appimages_noGroceries.jpg",
-            "title": "tomato",
-			"description": "tomato is good for health.",
-			"price" : "$1",
-			
+            "_id": "571bcf399f56e0b012027bd2",
+            "pic": "img/appimages_vegetables_ladiesfinger.jpg",
+            "title": "Ladies Finger",
+			"description": "Ladies Fingers are highly healthful. It is wealthy fiber content. It is a well-liked health food due to its high fiber, folate content and vitamin C. It is also identified for being high in antioxidants. It is also an excellent source of potassium and calcium.",
+			"benefits" : "It helps red blood cells production and prevent anemia. The high antioxidants and vitamin C content make okra useful for reducing asthmatic attacks. It has insulin-like properties that help to reduce blood sugar level.",
+			"prices" : [
+				{
+					"size" : "250 gm",
+					"price" : 20
+				},
+				{
+					"size" : "500 gm",
+					"price" : 40
+				},				
+				{
+					"size" : "750 gm",
+					"price" : 60
+				},				
+				{
+					"size" : "1 kg ( approx. 12 to 13 nos )",
+					"price" : 70
+				}
+			],
 			"Background" : "#A200FF",
-            "Code": "VEG_POTATO",
+            "Code": "VEG_LADIESFINGER",
+			"categories" : [
+				"FRUITSVEGETABLES"
+			],
+			"type" : "vegetables",
+			"related" : [
+				"VEG_ONION" 
+			],
+			"quantity" : 1,			
             "__v": 0
         },
         {
-            "_id": "571bcf5e9f56e0b012027bd3",
-            "pic": "img/appimages_noGroceries.jpg",
-            "title": "tomato",
-			"description": "tomato is good for health.",
-			"price" : "$1",
-			
+            "_id": "571bcf399f56e0b012027bd2",
+            "pic": "img/appimages_vegetables_brinjal.jpg",
+            "title": "Brinjal",
+			"description": "Bottle brinjals or eggplants are oval-shaped, soft and shiny skinned, deep-purple or green colored vegetables. It is low in calories and extremely rich in dietary fiber and several phytonutrient compounds & antioxidants and it is rich in B-complex vitamins.",
+			"benefits" : "Brinjals are excellent for weight loss and for keeping a check on cholesterol levels. They aid fat and protein metabolism and help battle inflammation and neurological diseases.",
+			"prices" : [
+				{
+					"size" : "250 gm (Approx 4 to 6 pcs)",
+					"price" : 20
+				},
+				{
+					"size" : "500 gm (Approx 7 to 8 nos)",
+					"price" : 40
+				}				
+			],
 			"Background" : "#A200FF",
-            "Code": "VEG_POTATO",
+            "Code": "VEG_BRINJAL",
+			"categories" : [
+				"FRUITSVEGETABLES"
+			],
+			"type" : "vegetables",
+			"related" : [
+				"VEG_ONION" 
+			],
+			"quantity" : 1,			
             "__v": 0
-        }
-		
+        },		
+		{
+            "_id": "571bcf399f56e0b012027bd2",
+            "pic": "img/appimages_fruits_apples.jpg",
+            "title": "Apples",
+			"description": "Fuji Apples have reddish stripes and slight red blush over yellow background color in exterior. It has firm, creamy-white flesh that is fine-grained interior. These are crisp and very juicy with a sugary-sweet flavor that resembles that of freshly pressed apple juice. This medium-sized apple is slightly sweeter than other varieties.",
+			"benefits" : "Fuji Apples are a rich source of dietary fiber, which helps in lowers the risk of developing Type 2 diabetes. It reduces the risk of neurodegenerative diseases such as Parkinsons and Alzheimers and boosts brain function. It promotes bone health & reduces risk of osteoporosis, prevents liver & digestive problems, promotes healthy skin & hair, and reduces the risk of developing a number of cancers.",
+			"prices" : [
+				{
+					"size" : "4 pcs",
+					"price" : 50
+				},
+				{
+					"size" : "8 pcs",
+					"price" : 75
+				}			
+			],
+			"Background" : "#A200FF",
+            "Code": "FRU_APPLES",
+			"categories" : [
+				"FRUITSVEGETABLES"
+			],
+			"type" : "fruits",
+			"related" : [
+				"FRU_MANGO"
+			],
+			"quantity" : 1,			
+            "__v": 0
+        },	
+		{
+            "_id": "571bcf399f56e0b012027bd2",
+            "pic": "img/appimages_fruits_mangoes.jpg",
+            "title": "Mangoes",
+			"description": "This is increasingly a popular cultivar of mango, originated from Andra Pradesh, also goes by the names of 'Baneshan' in Hindi and is also spelt 'Baiganpalli' or 'Beganpalli'. The pulp is fibreless, hard and yellow with sweet flavor. This is a very sought after variety of mangoes around the globe. The fruit is fairly juicy and extremely unique in flavor. The color is maize yellow with fibreless flesh content and a glossy skin.",
+			"benefits" : "Not Available",
+			"prices" : [
+				{
+					"size" : "4 pcs",
+					"price" : 100
+				},
+				{
+					"size" : "6 pcs",
+					"price" : 120
+				}				
+			],
+			"Background" : "#A200FF",
+            "Code": "FRU_MANGO",
+			"categories" : [
+				"FRUITSVEGETABLES"
+			],
+			"type" : "fruits",
+			"related" : [
+				"FRU_APPLES"
+			],
+			"quantity" : 1,			
+            "__v": 0
+        }			
    ]
 }

@@ -30,6 +30,7 @@ class ConferenceApp {
 	this.groceriesData = GroceriesData;
 	this.tilesData = tilesData;
     this.loggedIn = false;
+	this.ShowCheckOutButton = false;
 	
     // Call any initial plugins when ready
     platform.ready().then(() => {
@@ -123,6 +124,10 @@ class ConferenceApp {
     this.events.subscribe('user:login', () => {
       this.loggedIn = true;
     });
+	
+	this.events.subscribe('user:navigated', () => {
+		this.ShowCheckOutButton = true;
+	});
 
     this.events.subscribe('user:signup', () => {
       this.loggedIn = true;

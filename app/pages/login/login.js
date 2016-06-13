@@ -1,4 +1,4 @@
-import {IonicApp, Page, NavController} from 'ionic-angular';
+import {IonicApp, Page, NavController, Events} from 'ionic-angular';
 import {SignupPage} from '../signup/signup';
 import {UsersService} from '../../services/usersProvider';
 import {HomeTilesPage} from '../HomeTiles/HomeTiles';
@@ -8,12 +8,13 @@ import {HomeTilesPage} from '../HomeTiles/HomeTiles';
 })
 export class LoginPage {
   static get parameters() {
-    return [[NavController], [UsersService]];
+    return [[NavController], [UsersService], [Events]];
   }
 
-  constructor(nav, userData) {
+  constructor(nav, userData, events) {
     this.nav = nav;
     this.userData = userData;
+	this.events = events;
 
     this.login = {};
     this.submitted = false;
@@ -28,7 +29,6 @@ export class LoginPage {
 				this.nav.push(HomeTilesPage);
 			}
         );
-      
     }
   }
 
@@ -37,6 +37,7 @@ export class LoginPage {
   }
   
   startApp() {
+	this.events.publish('user:navigated');
     this.nav.push(HomeTilesPage);
   }
 }

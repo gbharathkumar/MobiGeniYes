@@ -16,24 +16,32 @@
                 <p>
                     {{grocery.description}}
                 </p>
+				<h2>BENEFITS</h2>
+				<p>
+					{{grocery.benefits}}
+				</p>
             </ion-card-content>
-            <ion-list>
-                <ion-item>
-                    <ion-icon item-left name="moon"></ion-icon>
-                    <h3>Bedrooms</h3>
-                    <ion-note item-right>{{grocery.price}}</ion-note>
-                </ion-item>
-                <ion-item>
-                    <ion-icon item-left name="flask"></ion-icon>
-                    <h3>Bathrooms</h3>
-                    <ion-note item-right>{{grocery.price}}</ion-note>
-                </ion-item>
-                <ion-item>
-                    <ion-icon item-left name="pricetag"></ion-icon>
-                    <h3>Asking Price</h3>
-                    <ion-note item-right>{{grocery.price}}</ion-note>
-                </ion-item>
-            </ion-list>
+			<ion-list radio-group stretch>
+				<ion-item *ngFor="let price of grocery.prices" >
+					<ion-radio [value]="price.size"></ion-radio>
+					<ion-label small>{{price.size}} - Rs. {{price.price}}</ion-label>
+				</ion-item>
+			</ion-list>
+			<ion-row no-padding>
+				<ion-col >
+					<ion-item>
+						<ion-label floating>Quantity</ion-label>
+						<ion-input type="text" ([value])="grocery.quantity">1</ion-input>
+					</ion-item>
+				</ion-col>
+				<ion-col >
+					<ion-item>
+						<ion-label floating>Total Price</ion-label>
+						<ion-input type="text" ([value])="grocery.quantity">1</ion-input>
+					</ion-item>
+				</ion-col>
+			</ion-row>
+			
             <ion-row no-padding>
                 <ion-col>
                     <button clear small >
@@ -41,18 +49,12 @@
                         Favorite
                     </button>
                 </ion-col>
-                <ion-col text-center>
-                    <button clear small >
-                        <ion-icon name="thumbs-up"></ion-icon>
-                        Like
-                    </button>
-                </ion-col>
-                <ion-col text-right>
-                    <button clear small (click)="share($event, grocery)">
-                        <ion-icon name="share-alt"></ion-icon>
-                        Share
-                    </button>
-                </ion-col>
+				<ion-col>
+					<button rounded small outline right>
+						<ion-icon name="cart"></ion-icon>
+						Add to Cart
+					</button>
+				</ion-col>	
             </ion-row>
         </ion-card>
     </div>

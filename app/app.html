@@ -7,6 +7,25 @@
   </ion-toolbar>
 
   <ion-content class="outer-content">
+    <ion-list *ngIf="loggedIn">
+      <ion-list-header>
+        Account
+      </ion-list-header>
+      <button ion-item menuClose *ngFor="let p of loggedInPages" (click)="openPage(p)">
+        <ion-icon item-left [name]="p.icon"></ion-icon>
+        {{p.title}}
+      </button>
+    </ion-list>
+
+    <ion-list *ngIf="!loggedIn">
+      <ion-list-header>
+        Account
+      </ion-list-header>
+      <button ion-item menuClose *ngFor="let p of loggedOutPages" (click)="openPage(p)">
+        <ion-icon item-left [name]="p.icon"></ion-icon>
+        {{p.title}}
+      </button>
+    </ion-list>
 
     <ion-list>
 		<ion-list-header>
@@ -36,25 +55,6 @@
 		</div>	
 	</ion-list>
 
-    <ion-list *ngIf="loggedIn">
-      <ion-list-header>
-        Account
-      </ion-list-header>
-      <button ion-item menuClose *ngFor="let p of loggedInPages" (click)="openPage(p)">
-        <ion-icon item-left [name]="p.icon"></ion-icon>
-        {{p.title}}
-      </button>
-    </ion-list>
-
-    <ion-list *ngIf="!loggedIn">
-      <ion-list-header>
-        Account
-      </ion-list-header>
-      <button ion-item menuClose *ngFor="let p of loggedOutPages" (click)="openPage(p)">
-        <ion-icon item-left [name]="p.icon"></ion-icon>
-        {{p.title}}
-      </button>
-    </ion-list>
   </ion-content>
 
 </ion-menu>
@@ -62,3 +62,7 @@
 
 <!-- main navigation -->
 <ion-nav id="nav" [root]="root" #content swipe-back-enabled="false"></ion-nav>
+  <button fab TEAL fab-bottom fab-right *ngIf="ShowCheckOutButton">
+    <ion-icon name="basket" is-active="true"></ion-icon>
+	
+  </button>

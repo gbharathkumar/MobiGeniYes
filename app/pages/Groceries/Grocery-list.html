@@ -5,33 +5,56 @@
     <ion-title>{{navigationComponent.Name}}</ion-title>
 </ion-navbar>
 
-<ion-content clsas="grocery">
-		<ion-card *ngFor="#grocery of groceries" (click)="itemTapped($event, grocery)">
-            <img src="{{grocery.pic}}"/>
-            <ion-card-content>
-                <h2 class="card-title">
-                    {{grocery.title}}
-                </h2>
-            </ion-card-content>				
+<ion-content class="grocery">
+		<ion-card *ngFor="let grocery of groceries" >
             <ion-row>
-                <ion-col>
-                    <button clear small >
-                        <ion-icon name="star"></ion-icon>
-                        Favorite
-                    </button>
-                </ion-col>
-                <ion-col text-center>
-                    <button clear small >
-                        <ion-icon name="thumbs-up"></ion-icon>
-                        Like
-                    </button>
-                </ion-col>
-                <ion-col text-right>
-                    <button clear small (click)="share($event, grocery)">
-                        <ion-icon name="share-alt"></ion-icon>
-                        Share
-                    </button>
-                </ion-col>
-            </ion-row>
+				<ion-col width-33>
+					<ion-row>
+						<img src="{{grocery.pic}}" (click)="itemTapped($event, grocery)"/>
+					</ion-row>
+					<ion-row>
+						{{grocery.title}}
+					</ion-row>
+				</ion-col>
+				<ion-col>
+					<ion-row>
+						<ion-list radio-group stretch>
+							<ion-item *ngFor="let price of grocery.prices" >
+								<ion-radio [value]="price.size"></ion-radio>
+								<ion-label small>{{price.size}} - Rs. {{price.price}}</ion-label>
+							</ion-item>
+						</ion-list>
+					</ion-row>
+					<ion-row >
+						<ion-col width-33>
+							<ion-item>
+								<ion-label floating>Quantity</ion-label>
+								<ion-input type="text" ([value])="grocery.quantity">1</ion-input>
+							</ion-item>
+						</ion-col>
+						<ion-col width-33>
+							<ion-item>
+								<ion-label floating>Total Price</ion-label>
+								<ion-input type="text" ([value])="grocery.quantity">1</ion-input>
+							</ion-item>
+						</ion-col>
+					</ion-row>
+					<ion-row>
+						<ion-col>
+							<button clear small >
+								<ion-icon name="star"></ion-icon>
+								Favorite
+							</button>
+						</ion-col>
+						<ion-col>
+							<button rounded small outline right>
+								<ion-icon name="cart"></ion-icon>
+								Add to Cart
+							</button>
+						</ion-col>	
+					</ion-row>
+					
+				</ion-col>
+			</ion-row>	
         </ion-card>	
 </ion-content>

@@ -15,7 +15,7 @@ export class GroceryListPage {
     constructor(nav, navParams, GroceriesService) {
         this.nav = nav;
         this.GroceriesService = GroceriesService;
-        this.tile = navParams.get('tile');
+        this.navigationComponent = navParams.get('navigationComponent');
     }
 
     ngOnInit() {
